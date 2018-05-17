@@ -1,0 +1,7 @@
+numpy
+scikit-learn
+spacy
+tensorflow
+keras
+rasa_nlu==0.12.3
+rasa_core==0.9.0a2

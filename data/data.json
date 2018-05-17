@@ -1,0 +1,92 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "stop",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "What's the weather in Kathmandu at the moment?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 22,
+            "end": 31,
+            "value": "Kathmandu",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "show me the weather in Kathmandu at the moment",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 23,
+            "end": 32,
+            "value": "Kathmandu",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "what's the weather in Lalitpur right now?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 22,
+            "end": 30,
+            "value": "Lalitpur",
+            "entity": "location"
+          }
+        ]
+      }
+    ]
+  }
+}
