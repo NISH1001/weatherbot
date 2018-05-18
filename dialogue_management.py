@@ -24,7 +24,7 @@ def train_dialogue(domain_file = 'weather_domain.yml',
     agent.train(
             training_data_file,
             max_history = 2,
-            epochs = 50,
+            epochs = 300,
             batch_size = 50,
             validation_split = 0.2,
             augmentation_factor = 50)

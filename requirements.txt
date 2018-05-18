@@ -1,3 +1,9 @@
+gunicorn
+gevent
+greenlet>=0.4.10
+flask
+sklearn_crfsuite
+slackclient
 numpy
 scikit-learn
 spacy
