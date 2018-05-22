@@ -3,7 +3,10 @@ from rasa_core.agent import Agent
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_slack_connector import SlackInput
 
+import config
 import os
+
+config_auth = config.load_auth_config("config_auth.json")
 
 print("Downloading spacy model...")
 os.system("python -m spacy download en")
@@ -16,9 +19,9 @@ print("Loading dialogue model...")
 agent = Agent.load('models/dialogue', interpreter = nlu_interpreter)
 
 print("Creating Slack input channel...")
-input_channel = SlackInput("xoxp-365456006819-366603115687-365698335541-3fffd691b9e21872633ecb37c562c349",
-                           "xoxb-365456006819-365016635361-7xdIR39l1KeKl5nRqKEZn7PZ",
-                           "9kAwA9BgpiuuKdVnvQFyFKm8",
+input_channel = SlackInput(config_auth['app_verification_token'],
+                           config_auth['bot_verification_token'],
+                           config_auth['slack_verification_token'],
                            True)
 
 agent.handle_channel(HttpInputChannel(5004, '/', input_channel))

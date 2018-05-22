@@ -1,5 +1,6 @@
-# ignorance is bliss
+# ignorance is piss
 models/
+config_auth.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
